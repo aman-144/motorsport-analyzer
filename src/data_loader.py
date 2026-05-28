@@ -39,3 +39,4 @@ print(clean_laps)
 best_lap = clean_laps[clean_laps['LapTime']==clean_laps['LapTime'].min()]
 print(best_lap)
  
+clean_laps.to_csv('processed_data/hamilton_2023_bahrain.csv', index=False) #ye clean laps ko csv file me save karega
