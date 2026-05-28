@@ -26,4 +26,12 @@ for driver_number in session.drivers:
               print(laps)
 
 
-         break
+         #break
+
+clean_laps = laps[laps['IsAccurate'] == True]
+clean_laps = clean_laps[['Time', 'LapNumber', 'LapTime', 
+                          'Sector1Time', 'Sector2Time', 'Sector3Time',
+                          'SpeedI1', 'SpeedI2', 'SpeedFL',
+                          'Compound', 'TyreLife', 'Position', 
+                          'IsAccurate']]
+print(clean_laps)
