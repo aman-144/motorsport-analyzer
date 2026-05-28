@@ -35,3 +35,7 @@ clean_laps = clean_laps[['Time', 'LapNumber', 'LapTime',
                           'Compound', 'TyreLife', 'Position', 
                           'IsAccurate']]
 print(clean_laps)
+
+best_lap = clean_laps[clean_laps['LapTime']==clean_laps['LapTime'].min()]
+print(best_lap)
+ 
